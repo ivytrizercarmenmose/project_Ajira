@@ -8,7 +8,7 @@
     tools:context=".Login">
 
     <TextView
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/red"
         android:id="@+id/LoGiN"
         android:layout_width="310dp"
         android:layout_height="47dp"
