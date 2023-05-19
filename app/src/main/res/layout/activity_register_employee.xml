@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bga"
+    tools:context=".RegisterEmployee">
+
+
+    <TextView
+        android:textColorHint="@color/black"
+        android:id="@+id/edt_REG_EMPLOYEE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="CREATE ACCOUNT HERE"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/edt_Name"
+        app:layout_constraintEnd_toEndOf="@+id/edt_Name"
+        app:layout_constraintStart_toStartOf="@+id/edt_Name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:id="@+id/edt_Name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Full Names"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edt_Number"
+        app:layout_constraintEnd_toEndOf="@+id/edt_Number"
+        app:layout_constraintStart_toStartOf="@+id/edt_Number"
+        app:layout_constraintTop_toBottomOf="@+id/edt_REG_EMPLOYEE" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:id="@+id/edt_Number"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter ID No."
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edt_Email"
+        app:layout_constraintEnd_toEndOf="@+id/edt_Email"
+        app:layout_constraintStart_toStartOf="@+id/edt_Email"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Name" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:id="@+id/edt_Email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edt_Gender"
+        app:layout_constraintEnd_toEndOf="@+id/edt_Gender"
+        app:layout_constraintStart_toStartOf="@+id/edt_Gender"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Number" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:id="@+id/edt_Gender"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Gender"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/Specialty"
+        app:layout_constraintEnd_toEndOf="@+id/Specialty"
+        app:layout_constraintStart_toStartOf="@+id/Specialty"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Email" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:id="@+id/edt_Phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edt_Location"
+        app:layout_constraintEnd_toEndOf="@+id/edt_Location"
+        app:layout_constraintStart_toStartOf="@+id/edt_Location"
+        app:layout_constraintTop_toBottomOf="@+id/Specialty" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:id="@+id/edt_Location"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Location"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edt_Password"
+        app:layout_constraintEnd_toEndOf="@+id/edt_Password"
+        app:layout_constraintStart_toStartOf="@+id/edt_Password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Phone" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:id="@+id/edt_Password"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Location" />
+
+    <Button
+        android:id="@+id/btn_Submit"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="SUBMIT"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edt_Password"
+        app:layout_constraintStart_toStartOf="@+id/edt_Password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Password" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:id="@+id/Specialty"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Work Specialty"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edt_Phone"
+        app:layout_constraintEnd_toEndOf="@+id/edt_Phone"
+        app:layout_constraintStart_toStartOf="@+id/edt_Phone"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Gender" />
+</androidx.constraintlayout.widget.ConstraintLayout>

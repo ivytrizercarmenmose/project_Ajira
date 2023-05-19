@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Employee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bga"
+    tools:context=".Register">
+
+    <TextView
+
+        android:textColor="@color/black"
+        android:id="@+id/Question_"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="78dp"
+        android:text="Create Acc "
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:textColor="@color/black"
+        android:id="@+id/employer_"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="45dp"
+        android:text="Employer"
+        app:layout_constraintEnd_toEndOf="@+id/Question_"
+        app:layout_constraintTop_toBottomOf="@+id/Question_" />
+
+    <Button
+        android:textColor="@color/black"
+        android:id="@+id/employee_"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="66dp"
+        android:text="Employee"
+        app:layout_constraintStart_toStartOf="@+id/employer_"
+        app:layout_constraintTop_toBottomOf="@+id/employer_" />
+</androidx.constraintlayout.widget.ConstraintLayout>

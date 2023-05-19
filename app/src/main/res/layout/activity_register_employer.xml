@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edt__email"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bga"
+    tools:context=".RegisterEmployer">
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/edt_REG_EMPLOYER"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="REGISTER HERE"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:id="@+id/edt_name"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Full Names"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_REG_EMPLOYER" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:id="@+id/edt_number"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter ID No."
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/edt_name"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:id="@+id/edt_Email_"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/edt_number"
+        app:layout_constraintTop_toBottomOf="@+id/edt_number" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:id="@+id/edt_password"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/edt_location"
+        app:layout_constraintTop_toBottomOf="@+id/edt_location" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:id="@+id/edt_location"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Location"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/edt_Email_"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Email_" />
+
+    <Button
+        android:textColor="@color/black"
+        android:id="@+id/btn_submit"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="SUBMIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>

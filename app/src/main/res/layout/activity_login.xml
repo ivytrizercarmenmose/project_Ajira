@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bga"
+    tools:context=".Login">
+
+    <TextView
+        android:textColorHint="@color/black"
+        android:id="@+id/LoGiN"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="95dp"
+        android:gravity="center"
+        android:text="LOGIN "
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/EMPLOYER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/EMPLOYER"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="95dp"
+        android:text="Employer"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/EMPLOYEE"
+        app:layout_constraintEnd_toEndOf="@+id/LoGiN" />
+
+    <Button
+        android:id="@+id/EMPLOYEE"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="302dp"
+        android:text="Employee"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/EMPLOYER" />
+</androidx.constraintlayout.widget.ConstraintLayout>
